@@ -62,10 +62,7 @@ export default function AboutSection({ language }) {
 
         {/* Right side - Trust card */}
         <div className="relative mx-auto w-full max-w-full sm:max-w-[470px]">
-          <div className="absolute -right-5 -top-5 h-24 w-24 rounded-full border-[14px] border-[#f16f61]/70"></div>
-
           <div className="relative overflow-hidden rounded-[2px] border border-[#102d2a]/15 bg-[#102d2a] p-8 shadow-[18px_20px_0_rgba(8,127,89,.18)] md:p-10">
-            <div className="absolute right-0 top-0 h-32 w-32 bg-gradient-to-br from-[#f16f61]/80 to-transparent opacity-80"></div>
 
             <HeartHandshake size={40} className="relative text-[#a8d6bd]" />
 
