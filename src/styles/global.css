@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Manrope', 'Noto Sans Devanagari', sans-serif;
+}
+
+.hindi {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Animation keyframes */
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(1.015);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes accent-drift {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(12px) rotate(2deg);
+    opacity: 1;
+  }
+}
+
+@keyframes soft-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(8, 127, 89, 0.16);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(8, 127, 89, 0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -180px 0;
+  }
+  100% {
+    background-position: 180px 0;
+  }
+}
+
+/* Animation utility classes */
+.accent-drift {
+  animation: accent-drift 5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.soft-pulse {
+  animation: soft-pulse 3.5s ease-in-out infinite;
+}
+
+.shimmer-line {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  background-size: 180px 100%;
+  animation: shimmer 3.2s ease-in-out infinite;
+}
+
+.premium-transition {
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 0.35s ease,
+              border-color 0.35s ease,
+              color 0.35s ease;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f1e9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #087f59;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #053d2e;
+}
+
+/* Selection */
+::selection {
+  background: #087f59;
+  color: white;
+}
+
+/* No scroll-behavior: smooth on html — manual scroll stays instant */
+html {
+  scroll-padding-top: 0;
+}
+
+/* Reduce animation jank */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optimize paint for animated elements */
+.accent-drift,
+.soft-pulse,
+.shimmer-line,
+.premium-transition,
+.pixel-card,
+.particle-text {
+  will-change: auto;
+  transform: translateZ(0);
+}
+
+/* Prevent layout shifts from images */
+img {
+  content-visibility: auto;
+}
+
+/* Smoother hover transitions globally */
+a, button {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
