@@ -49,13 +49,13 @@ export default function TechStackSection() {
             <p className="text-[11px] font-extrabold uppercase tracking-[.25em] text-[#087f59]">
               Under the hood
             </p>
-            <h2 className="mt-4 font-display text-[43px] leading-[1.04] tracking-[-.04em] text-[#102d2a]">
+            <h2 className="mt-4 font-display text-[clamp(1.75rem,6vw,2.7rem)] leading-[1.04] tracking-[-.04em] text-[#102d2a]">
               The tech that powers
               <br />
               every prediction.
             </h2>
           </div>
-          <p className="col-span-12 max-w-[430px] self-end text-sm leading-7 text-[#61736e] lg:col-span-4 lg:col-start-8">
+          <p className="col-span-12 max-w-full self-end text-sm leading-7 text-[#61736e] lg:col-span-4 lg:col-start-8 lg:max-w-[430px]">
             Three model architectures, explainable AI, multilingual support, and healthcare-grade interoperability—working together in every screening.
           </p>
         </div>

@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#f5f1e9] font-sans text-[#102d2a]" style={{ backgroundImage: 'linear-gradient(rgba(16,45,42,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(16,45,42,.02) 1px, transparent 1px)', backgroundSize: '7px 7px, 9px 9px' }}>
       <Header language={language} setLanguage={setLanguage} onStartScreening={() => setCurrentPage('role-select')} />
-      <div style={{ width: '100%', height: 260, background: '#f5f1e9' }}>
+      <div className="w-full bg-[#f5f1e9]" style={{ height: 'clamp(160px, 20vw, 260px)' }}>
         <ParticleText
           text="DERMALENSE AI"
           particleSize={2.2}

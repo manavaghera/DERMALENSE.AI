@@ -22,7 +22,7 @@ export default function RoleSelectionPage({ onBack }) {
           <p className="text-[11px] font-extrabold uppercase tracking-[.25em] text-[#087f59]">
             Get started
           </p>
-          <h1 className="mt-4 font-display text-[48px] leading-[1.04] tracking-[-.04em] text-[#102d2a] md:text-[58px]">
+          <h1 className="mt-4 font-display text-[clamp(1.75rem,8vw,3rem)] leading-[1.04] tracking-[-.04em] text-[#102d2a] md:text-[58px]">
             Choose your role
           </h1>
           <p className="mt-4 max-w-[480px] text-[15px] leading-7 text-[#61736e]">
@@ -31,9 +31,9 @@ export default function RoleSelectionPage({ onBack }) {
         </div>
 
         {/* Cards */}
-        <div className="mt-14 flex flex-col items-center justify-center gap-10 md:flex-row md:gap-14">
+        <div className="mt-10 flex flex-col items-center justify-center gap-8 sm:mt-14 sm:gap-10 md:flex-row md:gap-14">
           {/* Patient / ASHA Worker Card */}
-          <PixelCard variant="green" className="w-[320px] py-12 px-6">
+          <PixelCard variant="green" className="w-full max-w-[320px] py-10 px-6 sm:py-12">
             <div className="flex flex-col items-center text-center">
               <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#087f59]/15">
                 <Users size={32} className="text-[#087f59]" />
@@ -51,7 +51,7 @@ export default function RoleSelectionPage({ onBack }) {
           </PixelCard>
 
           {/* Doctor / Practitioner Card */}
-          <PixelCard variant="coral" className="w-[320px] py-12 px-6">
+          <PixelCard variant="coral" className="w-full max-w-[320px] py-10 px-6 sm:py-12">
             <div className="flex flex-col items-center text-center">
               <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#f16f61]/15">
                 <Stethoscope size={32} className="text-[#f16f61]" />

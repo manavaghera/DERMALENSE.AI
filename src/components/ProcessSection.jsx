@@ -13,17 +13,17 @@ export default function ProcessSection() {
       <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
         <div>
           <p className="text-[11px] font-extrabold uppercase tracking-[.25em] text-[#087f59]">The process</p>
-          <h2 className="mt-3 font-display text-[42px] tracking-[-.04em]">From image to insight.</h2>
+          <h2 className="mt-3 font-display text-[clamp(1.5rem,5vw,2.625rem)] tracking-[-.04em]">From image to insight.</h2>
         </div>
         <p className="max-w-[350px] text-sm leading-6 text-[#61736e]">
           A calm, transparent flow—never a replacement for a qualified medical opinion.
         </p>
       </div>
 
-      <div className="mt-10 grid gap-10 md:grid-cols-4">
+      <div className="mt-10 grid grid-cols-2 gap-6 sm:gap-10 md:grid-cols-4">
         {steps.map((step, idx) => (
           <div key={idx}>
-            <span className="font-display text-5xl" style={{ color: step.color }}>
+            <span className="font-display text-3xl sm:text-5xl" style={{ color: step.color }}>
               {step.num}
             </span>
             <h3 className="mt-4 font-extrabold">{step.title}</h3>

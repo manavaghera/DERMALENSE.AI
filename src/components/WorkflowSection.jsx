@@ -47,17 +47,17 @@ export default function WorkflowSection() {
               <span className="h-px w-10 bg-[#f16f61]"></span>
               How it works
             </p>
-            <h2 className="mt-4 font-display text-[48px] leading-[1.04] tracking-[-.04em] text-white md:text-[58px]">
-              The workflow <span className="hindi text-[30px] text-[#a8d6bd]">/ कार्य प्रवाह</span>
+            <h2 className="mt-4 font-display text-[clamp(1.75rem,7vw,3rem)] leading-[1.04] tracking-[-.04em] text-white md:text-[58px]">
+              The workflow <span className="hindi text-[clamp(1rem,3vw,1.875rem)] text-[#a8d6bd]">/ कार्य प्रवाह</span>
             </h2>
           </div>
-          <p className="max-w-[390px] text-sm leading-7 text-white/65">
+          <p className="max-w-full text-sm leading-7 text-white/65 md:max-w-[390px]">
             A calm, transparent journey from the first image to a more informed care decision.
           </p>
         </div>
 
         {/* Steps grid */}
-        <div className="relative mt-14 grid gap-10 md:grid-cols-4 md:gap-6">
+        <div className="relative mt-10 grid grid-cols-2 gap-8 sm:mt-14 sm:gap-10 md:grid-cols-4 md:gap-6">
           {/* Connecting line */}
           <div className="absolute left-[12.5%] right-[12.5%] top-7 hidden h-px bg-gradient-to-r from-[#f16f61] via-[#a8d6bd] to-[#087f59] md:block"></div>
 

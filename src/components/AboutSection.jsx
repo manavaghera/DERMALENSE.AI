@@ -12,7 +12,7 @@ export default function AboutSection({ language }) {
             <span className="hindi text-sm">हमारा मिशन</span> · Our mission
           </p>
 
-          <h2 className="mt-5 max-w-[590px] font-display text-[46px] leading-[1.02] tracking-[-.045em] text-[#102d2a] md:text-[58px]">
+          <h2 className="mt-5 max-w-full font-display text-[clamp(1.75rem,7vw,3rem)] leading-[1.02] tracking-[-.045em] text-[#102d2a] md:max-w-[590px] md:text-[58px]">
             Built on trust.
             <br />
             <span className="text-[#087f59]">Designed for care.</span>
@@ -60,7 +60,7 @@ export default function AboutSection({ language }) {
         </div>
 
         {/* Right side - Trust card */}
-        <div className="relative mx-auto w-full max-w-[470px]">
+        <div className="relative mx-auto w-full max-w-full sm:max-w-[470px]">
           <div className="absolute -right-5 -top-5 h-24 w-24 rounded-full border-[14px] border-[#f16f61]/70"></div>
 
           <div className="relative overflow-hidden rounded-[2px] border border-[#102d2a]/15 bg-[#102d2a] p-8 shadow-[18px_20px_0_rgba(8,127,89,.18)] md:p-10">

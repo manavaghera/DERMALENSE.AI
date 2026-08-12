@@ -57,13 +57,13 @@ export default function DatasetsSection() {
               <span className="h-px w-10 bg-[#f16f61]"></span>
               Training data
             </p>
-            <h2 className="mt-4 font-display text-[43px] leading-[1.04] tracking-[-.04em] md:text-[52px]">
+            <h2 className="mt-4 font-display text-[clamp(1.75rem,6vw,2.7rem)] leading-[1.04] tracking-[-.04em] md:text-[52px]">
               The datasets behind
               <br />
               <span className="text-[#a8d6bd]">every prediction.</span>
             </h2>
           </div>
-          <p className="max-w-[400px] text-sm leading-7 text-white/55">
+          <p className="max-w-full text-sm leading-7 text-white/55 md:max-w-[400px]">
             A diverse, multi-source training pipeline — rigorously curated to ensure accuracy across skin types, conditions, and imaging environments.
           </p>
         </div>

@@ -25,13 +25,13 @@ export default function Hero() {
       </svg>
 
       {/* Left content */}
-      <div className="col-span-12 flex flex-col justify-center pb-14 pt-16 lg:col-span-7 lg:pb-20 lg:pt-20">
+      <div className="col-span-12 flex flex-col justify-center pb-10 pt-10 sm:pb-14 sm:pt-16 lg:col-span-7 lg:pb-20 lg:pt-20">
         <p className="mb-7 flex items-center gap-3 text-[11px] font-extrabold uppercase tracking-[.25em] text-[#f16f61]">
           <span className="h-px w-10 bg-[#f16f61]"></span>
           Preliminary skin intelligence · त्वचा की पहली समझ
         </p>
 
-        <h1 className="max-w-[760px] font-display text-[60px] font-semibold leading-[.98] tracking-[-.055em] text-[#102d2a] lg:text-[82px]">
+        <h1 className="max-w-full font-display text-[clamp(2.2rem,8vw,5rem)] font-semibold leading-[.98] tracking-[-.055em] text-[#102d2a] lg:text-[82px]">
           See skin health
           <br />
           <span className="text-[#087f59]">more clearly.</span>
@@ -52,23 +52,23 @@ export default function Hero() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="mt-9 flex items-center gap-4">
+        <div className="mt-9 flex flex-wrap items-center gap-3 sm:gap-4">
           <a
             href="#start"
-            className="premium-transition inline-flex h-14 items-center gap-3 rounded-full bg-[#f16f61] px-7 text-[12px] font-extrabold uppercase tracking-[.12em] text-[#102d2a] shadow-[0_12px_24px_rgba(241,111,97,.2)] transition hover:-translate-y-1 hover:bg-[#ff806f]"
+            className="premium-transition inline-flex h-12 min-h-[44px] items-center gap-2 rounded-full bg-[#f16f61] px-5 text-[11px] font-extrabold uppercase tracking-[.12em] text-[#102d2a] shadow-[0_12px_24px_rgba(241,111,97,.2)] transition hover:-translate-y-1 hover:bg-[#ff806f] sm:h-14 sm:gap-3 sm:px-7 sm:text-[12px]"
           >
             Capture a concern <Camera size={18} />
           </a>
           <a
             href="#practitioners"
-            className="premium-transition inline-flex h-14 items-center gap-3 rounded-full border border-[#102d2a]/25 px-6 text-[12px] font-extrabold uppercase tracking-[.12em] text-[#102d2a] transition hover:border-[#087f59] hover:text-[#087f59]"
+            className="premium-transition inline-flex h-12 min-h-[44px] items-center gap-2 rounded-full border border-[#102d2a]/25 px-5 text-[11px] font-extrabold uppercase tracking-[.12em] text-[#102d2a] transition hover:border-[#087f59] hover:text-[#087f59] sm:h-14 sm:gap-3 sm:px-6 sm:text-[12px]"
           >
             For practitioners <ArrowRight size={18} />
           </a>
         </div>
 
         {/* Trust indicators */}
-        <div className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 text-[11px] font-bold text-[#61736e]">
+        <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3 text-[10px] font-bold text-[#61736e] sm:mt-10 sm:gap-x-7 sm:text-[11px]">
           <span className="flex items-center gap-2">
             <ShieldCheck size={18} className="text-[#087f59]" />
             Private by design
@@ -84,7 +84,7 @@ export default function Hero() {
         </div>
 
         {/* Quick stats */}
-        <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-2 border-t border-[#102d2a]/10 pt-6 text-[11px] font-extrabold uppercase tracking-[.1em] text-[#102d2a]/70">
+        <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-[#102d2a]/10 pt-5 text-[9px] font-extrabold uppercase tracking-[.08em] text-[#102d2a]/70 sm:mt-8 sm:gap-x-8 sm:pt-6 sm:text-[11px] sm:tracking-[.1em]">
           <span>3 model architectures</span>
           <span className="hidden h-3 w-px bg-[#102d2a]/15 sm:block"></span>
           <span>Hindi + English (Bhashini)</span>
@@ -96,9 +96,9 @@ export default function Hero() {
       </div>
 
       {/* Right side - Stepper */}
-      <div className="relative col-span-12 min-h-[420px] lg:col-span-5 lg:min-h-0">
+      <div className="relative col-span-12 min-h-[380px] sm:min-h-[420px] lg:col-span-5 lg:min-h-0">
         {/* Stepper Card */}
-        <div className="premium-transition absolute right-4 top-9 w-[390px] overflow-hidden rounded-2xl bg-gradient-to-br from-[#102d2a] via-[#0e2a27] to-[#102d2a] shadow-[0_28px_70px_rgba(16,45,42,.3)] hover:-translate-y-2 hover:shadow-[0_38px_90px_rgba(16,45,42,.4)] lg:w-[420px]">
+        <div className="premium-transition mx-auto w-full max-w-[390px] overflow-hidden rounded-2xl bg-gradient-to-br from-[#102d2a] via-[#0e2a27] to-[#102d2a] shadow-[0_28px_70px_rgba(16,45,42,.3)] hover:-translate-y-2 hover:shadow-[0_38px_90px_rgba(16,45,42,.4)] sm:absolute sm:right-4 sm:top-9 lg:w-[420px]">
           {/* Decorative circle */}
           <div className="absolute -right-14 -top-12 h-48 w-48 rounded-full border-[30px] border-[#f16f61]/30"></div>
 

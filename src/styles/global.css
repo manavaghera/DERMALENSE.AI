@@ -141,9 +141,42 @@ html {
 /* Prevent layout shifts from images */
 img {
   content-visibility: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+video, canvas, svg {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Smoother hover transitions globally */
 a, button {
   transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Touch-friendly minimum size for interactive elements */
+@media (max-width: 480px) {
+  button, a, [role="button"], input[type="submit"], input[type="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Prevent iOS auto-zoom on input focus */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Responsive typography helpers */
+@media (max-width: 480px) {
+  .font-display {
+    font-size: clamp(1.5rem, 8vw, 3rem);
+  }
+}
+
+/* Prevent horizontal overflow globally */
+html, body {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
 }

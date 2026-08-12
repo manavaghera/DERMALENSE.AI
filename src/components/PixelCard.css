@@ -20,6 +20,14 @@
   user-select: none;
   cursor: pointer;
   background: #f5f1e9;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+@media (max-width: 480px) {
+  .pixel-card {
+    border-radius: 16px;
+  }
 }
 
 .pixel-card:hover {

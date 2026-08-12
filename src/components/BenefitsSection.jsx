@@ -34,7 +34,7 @@ export default function BenefitsSection() {
       <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
         <div>
           <p className="text-[11px] font-extrabold uppercase tracking-[.25em] text-[#087f59]">Why DERMALENSE AI</p>
-          <h2 className="mt-3 font-display text-[42px] tracking-[-.04em]">Better skin health, for everyone.</h2>
+          <h2 className="mt-3 font-display text-[clamp(1.75rem,5vw,2.625rem)] tracking-[-.04em]">Better skin health, for everyone.</h2>
         </div>
         <p className="max-w-[350px] text-sm leading-6 text-[#61736e]">
           Technology designed to make skin care accessible, affordable, and backed by real medical expertise.
