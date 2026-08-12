@@ -39,6 +39,7 @@ export default function WorkflowSection() {
 
   return (
     <section id="workflow" className="relative overflow-hidden bg-[#102d2a] text-white">
+      <span className="absolute bottom-2 left-4 font-display text-[clamp(3rem,8vw,6rem)] font-bold leading-none opacity-[0.1] pointer-events-none select-none text-[#f16f61]">05</span>
       <div className="mx-auto max-w-[1320px] px-7 py-20 lg:px-10">
         {/* Header */}
         <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">

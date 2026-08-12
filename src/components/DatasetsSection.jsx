@@ -49,6 +49,7 @@ const datasets = [
 export default function DatasetsSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#102d2a] via-[#0e2a27] to-[#102d2a] text-white">
+      <span className="absolute bottom-2 left-4 font-display text-[clamp(3rem,8vw,6rem)] font-bold leading-none opacity-[0.1] pointer-events-none select-none text-[#a8d6bd]">07</span>
       <div className="mx-auto max-w-[1320px] px-7 py-20 lg:px-10">
         {/* Header */}
         <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
