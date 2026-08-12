@@ -4,7 +4,7 @@ import { Heart, Users, Stethoscope } from 'lucide-react';
 export default function CommunitySection() {
   return (
     <section id="community" className="relative overflow-hidden bg-gradient-to-br from-[#102d2a] via-[#123e70] to-[#102d2a] text-white">
-      <span className="absolute bottom-2 left-4 font-display text-[clamp(3rem,8vw,6rem)] font-bold leading-none opacity-20 pointer-events-none select-none text-[#f16f61]">03</span>
+      <span className="absolute top-1/2 -translate-y-1/2 right-8 font-display text-[clamp(5rem,12vw,10rem)] font-bold leading-none opacity-[0.06] pointer-events-none select-none text-[#f16f61] rotate-[5deg]">03</span>
       <div className="mx-auto max-w-[1320px] px-7 py-14 lg:px-10">
         <div className="grid grid-cols-12 items-end gap-8">
           <div className="col-span-12 lg:col-span-5">

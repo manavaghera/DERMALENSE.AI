@@ -43,7 +43,7 @@ const stack = [
 export default function TechStackSection() {
   return (
     <section className="relative overflow-hidden" style={{ backgroundImage: 'linear-gradient(rgba(16,45,42,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(16,45,42,.02) 1px, transparent 1px)', backgroundSize: '7px 7px, 9px 9px' }}>
-      <span className="absolute bottom-2 left-4 font-display text-[clamp(3rem,8vw,6rem)] font-bold leading-none opacity-20 pointer-events-none select-none text-[#a8d6bd]">04</span>
+      <span className="absolute bottom-6 left-8 font-display text-[clamp(4rem,10vw,8rem)] font-bold leading-none opacity-[0.06] pointer-events-none select-none text-[#102d2a] rotate-[12deg]">04</span>
       <div className="mx-auto max-w-[1320px] px-7 py-16 lg:px-10">
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 lg:col-span-5">
