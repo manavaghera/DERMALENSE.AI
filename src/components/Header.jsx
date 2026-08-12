@@ -76,7 +76,14 @@ export default function Header({ language, setLanguage, onStartScreening }) {
             <a
               key={`mobile-link-${idx}`}
               href={item.link}
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={(e) => {
+                if (item.link.startsWith('#')) {
+                  e.preventDefault();
+                  const el = document.querySelector(item.link);
+                  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+                setIsMobileMenuOpen(false);
+              }}
               className="relative text-[12px] font-bold uppercase tracking-[.14em] text-[#49615c] transition hover:text-[#087f59]"
             >
               <span className="block">{item.name}</span>
