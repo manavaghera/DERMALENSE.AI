@@ -15,7 +15,7 @@ export default function Header({ language, setLanguage, onStartScreening }) {
 
   const navItems = [
     { name: 'Home', link: '#home' },
-    { name: 'The process', link: '#process' },
+    { name: 'The process', link: '#workflow' },
     { name: 'For communities', link: '#community' },
     { name: 'Practitioners', link: '#practitioners' },
   ];
