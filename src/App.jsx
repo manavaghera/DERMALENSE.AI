@@ -8,6 +8,7 @@ import TechStackSection from './components/TechStackSection';
 import WorkflowSection from './components/WorkflowSection';
 import AboutSection from './components/AboutSection';
 import DatasetsSection from './components/DatasetsSection';
+import TimelineSection from './components/TimelineSection';
 import Footer from './components/Footer';
 import RoleSelectionPage from './components/RoleSelectionPage';
 
@@ -51,6 +52,7 @@ function App() {
         <AboutSection language={language} />
         <DatasetsSection />
       </main>
+      <TimelineSection />
       <Footer language={language} />
     </div>
   );

@@ -1,0 +1,223 @@
+.tl-section {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #102d2a 0%, #0e2a27 50%, #102d2a 100%);
+  padding: 5rem 1.5rem;
+}
+
+/* Vertical center line */
+.tl-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #087f59 10%, #a8d6bd 50%, #f16f61 90%, transparent);
+}
+
+.tl-container {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Each row */
+.tl-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 4rem;
+  min-height: 160px;
+}
+
+/* Left-side step: card on left, dot on right of card */
+.tl-block--left {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* Right-side step: card on right */
+.tl-block--right {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+/* Card wrapper — takes half width, leaves room for center dot */
+.tl-card {
+  width: calc(50% - 40px);
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: none;
+}
+
+.tl-block--right .tl-card {
+  transform: translateX(60px);
+}
+
+.tl-card--left-in {
+  animation: tl-slide-left 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.tl-card--right-in {
+  animation: tl-slide-right 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes tl-slide-left {
+  from { opacity: 0; transform: translateX(-60px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes tl-slide-right {
+  from { opacity: 0; transform: translateX(60px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Card inner styling */
+.tl-card-inner {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.tl-card-inner:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Center dot */
+.tl-dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 3px solid;
+  background: #102d2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  box-shadow: 0 0 0 6px #102d2a, 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: none;
+}
+
+.tl-dot--in {
+  animation: tl-dot-pop 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes tl-dot-pop {
+  0%   { transform: translateX(-50%) scale(0); opacity: 0; }
+  60%  { transform: translateX(-50%) scale(1.2); opacity: 1; }
+  100% { transform: translateX(-50%) scale(1); opacity: 1; }
+}
+
+.tl-dot-num {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+/* Desktop: alternating layout */
+@media (min-width: 769px) {
+  .tl-section {
+    padding: 6rem 2rem;
+  }
+
+  .tl-block {
+    margin-bottom: 4.5rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .tl-line {
+    left: 24px;
+    transform: none;
+  }
+
+  .tl-block,
+  .tl-block--left,
+  .tl-block--right {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 56px;
+  }
+
+  .tl-card {
+    width: 100%;
+    transform: translateX(40px) !important;
+  }
+
+  .tl-card--left-in,
+  .tl-card--right-in {
+    animation: tl-slide-right 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .tl-dot {
+    left: 24px;
+    transform: translateX(-50%) scale(0);
+    width: 44px;
+    height: 44px;
+  }
+
+  .tl-dot--in {
+    animation: tl-dot-pop-mobile 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  @keyframes tl-dot-pop-mobile {
+    0%   { transform: translateX(-50%) scale(0); opacity: 0; }
+    60%  { transform: translateX(-50%) scale(1.2); opacity: 1; }
+    100% { transform: translateX(-50%) scale(1); opacity: 1; }
+  }
+
+  .tl-section {
+    padding: 3rem 1rem;
+  }
+
+  .tl-block {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .tl-block,
+  .tl-block--left,
+  .tl-block--right {
+    padding-left: 44px;
+  }
+
+  .tl-line {
+    left: 18px;
+  }
+
+  .tl-dot {
+    left: 18px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .tl-dot-num {
+    font-size: 13px;
+  }
+
+  .tl-card-inner {
+    padding: 1.25rem;
+    border-radius: 14px;
+  }
+
+  .tl-card-inner h3 {
+    font-size: 1.125rem;
+  }
+
+  .tl-card-inner p {
+    font-size: 0.8125rem;
+  }
+}
