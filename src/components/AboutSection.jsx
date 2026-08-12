@@ -4,7 +4,7 @@ import { Check, HeartHandshake, Heart } from 'lucide-react';
 export default function AboutSection({ language }) {
   return (
     <section id="about-us" className="relative linen-texture bg-[#f5f1e9]" style={{ backgroundImage: 'linear-gradient(rgba(16,45,42,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(16,45,42,.02) 1px, transparent 1px)', backgroundSize: '7px 7px, 9px 9px' }}>
-      <span className="absolute top-8 right-10 font-display text-[clamp(4rem,10vw,8rem)] font-bold leading-none opacity-[0.07] pointer-events-none select-none text-[#f16f61] rotate-[10deg]">06</span>
+      <span className="absolute top-8 right-10 font-display text-[clamp(4rem,10vw,8rem)] font-bold leading-none opacity-20 pointer-events-none select-none text-[#f16f61] rotate-[10deg]">06</span>
       <div className="mx-auto grid max-w-[1320px] items-center gap-12 px-7 py-20 lg:grid-cols-2 lg:px-10">
         {/* Left content */}
         <div>

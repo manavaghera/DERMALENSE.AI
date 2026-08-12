@@ -31,7 +31,7 @@ const benefits = [
 export default function BenefitsSection() {
   return (
     <section className="relative mx-auto max-w-[1320px] px-7 py-16 lg:px-10" style={{ backgroundImage: 'linear-gradient(rgba(16,45,42,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(16,45,42,.02) 1px, transparent 1px)', backgroundSize: '7px 7px, 9px 9px' }}>
-      <span className="absolute top-4 right-6 font-display text-[clamp(4rem,10vw,8rem)] font-bold leading-none opacity-[0.07] pointer-events-none select-none text-[#087f59] rotate-[-8deg]">02</span>
+      <span className="absolute top-4 right-6 font-display text-[clamp(4rem,10vw,8rem)] font-bold leading-none opacity-20 pointer-events-none select-none text-[#087f59] rotate-[-8deg]">02</span>
       <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
         <div>
           <p className="text-[11px] font-extrabold uppercase tracking-[.25em] text-[#087f59]">Why DERMALENSE AI</p>
